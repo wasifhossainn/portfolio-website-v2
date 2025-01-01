@@ -27,7 +27,7 @@ const About = () => {
       id="about"
       className="bg-black text-white p-10 md:p-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10 min-h-screen"
       style={{
-        backgroundImage: "url('/images/about-background.svg')",
+        backgroundImage: "url('./images/about-background.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

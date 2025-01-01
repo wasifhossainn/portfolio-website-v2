@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center p-5">
         {/* Logo */}
         <div className="relative">
-          <Image src="/images/Logo.svg" alt="Logo" height={60} width={60} />
+          <Image src="./images/Logo.svg" alt="Logo" height={60} width={60} />
         </div>
 
         {/* Desktop Navigation */}

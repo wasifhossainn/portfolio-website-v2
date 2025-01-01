@@ -9,7 +9,7 @@ const projects = [
     description: "A collaborative capstone project designed to teach coding fundamentals and front-end development, helping students secure tech jobs. As a front-end developer, I contributed to UI design and researched AI-driven job recommendation use cases.",
     technologies: ["Vue", "Firebase", "Nuxt", "React", "Stripe", "Element UI", "HTML", "CSS"],
     websiteLink: "https://frontendsimplified.com/",
-    image: "/images/frontendsimplified.png",
+    image: "./images/frontendsimplified.png",
   },
   {
     title: "Travelogue",
@@ -17,14 +17,14 @@ const projects = [
     technologies: ["React", "Node.js", "MongoDB", "Express.js", "TypeScript", "Google APIs"],
     websiteLink: "https://www.youtube.com/watch?v=rSJsmoA4jxo&ab_channel=WH",
     githubLink: "https://github.com/Studio-3A",
-    image: "/images/travelogue.png",
+    image: "./images/travelogue.png",
   },
   {
     title: "Anti-Cheat Examination System",
     description: "A university project creating an AI-powered platform to prevent cheating during online exams. Features included detecting cheating devices and teacher misconduct reporting. I served as technical lead, managing a team of 12, while contributing to UX design and full-stack development.",
     technologies: ["MongoDB", "Express.js", "React", "Node.js", "Socket.IO", "YOLO API"],
     githubLink: "https://gitlab.com/aces1/anti-cheating-examination-system",
-    image: "/images/Anticheatingexamsystem.png",
+    image: "./images/Anticheatingexamsystem.png",
   },
 ];
 
@@ -234,7 +234,7 @@ const Work = () => (
     className="p-10 sm:p-12 bg-black text-green-400 min-h-screen"
     id="work"
     style={{
-      backgroundImage: "url('/images/project-background.svg')",
+      backgroundImage: "url('./images/project-background.svg')",
       backgroundSize: "cover",
       backgroundPosition: "center",
     }}
