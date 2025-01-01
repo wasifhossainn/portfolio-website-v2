@@ -17,7 +17,7 @@ const projects = [
     technologies: ["React", "Node.js", "MongoDB", "Express.js", "TypeScript", "Google APIs"],
     websiteLink: "https://www.youtube.com/watch?v=rSJsmoA4jxo&ab_channel=WH",
     githubLink: "https://github.com/Studio-3A",
-    image: "./images/travelogue.png",
+    image: "./images/travelogueimage.png",
   },
   {
     title: "Anti-Cheat Examination System",
