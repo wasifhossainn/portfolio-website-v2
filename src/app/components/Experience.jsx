@@ -37,7 +37,7 @@ const Experience = () => {
         "Designed and implemented full-stack features using Node.js, MeteorJS, and React Native, creating a user-friendly platform for over 1,000 users.",
         "Enhanced system performance and scalability, reducing latency by using data structures and algorithms.",
         "Analyzed, designed, and delivered innovative technical solutions effectively to customers.",
-        "Delivered a 98% error-free release rate by resolving user interface and logic bugs during the development lifecycle."
+        "Delivered an error-free release rate by resolving user interface and logic bugs during the development lifecycle."
       ],
     },
     Stomble: {
