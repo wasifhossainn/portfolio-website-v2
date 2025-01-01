@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -8,7 +7,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const NavLink = ({ href, text, onClick }) => (
   <a
     href={href}
-    className="block px-3 py-2 text-green-400 hover:text-white"
+    className="block px-3 py-2 text-lg md:text-xl text-green-400 hover:text-white flex items-center space-x-2 font-semibold"
     onClick={onClick}
   >
     {text}
@@ -18,13 +17,9 @@ const NavLink = ({ href, text, onClick }) => (
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleMenuToggle = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const handleMenuToggle = () => setMenuOpen((prev) => !prev);
 
-  const handleCloseMenu = () => {
-    setMenuOpen(false);
-  };
+  const handleCloseMenu = () => setMenuOpen(false);
 
   return (
     <nav className="sticky top-0 left-0 w-full bg-black bg-opacity-90 z-50 shadow-lg">
@@ -36,17 +31,17 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <NavLink href="#about" text="1. About" />
-          <NavLink href="#experience" text="2. Experience" />
-          <NavLink href="#work" text="3. Work" />
-          <NavLink href="#contact" text="4. Contact" />
+          <NavLink href="#about" text="🌟 About" />
+          <NavLink href="#experience" text="👨‍💼 Experience" />
+          <NavLink href="#work" text="💼 Work" />
+          <NavLink href="#contact" text="✉️ Contact" />
           <a
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="border text-white border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:text-white"
+            className="border text-green-400 border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:text-black flex items-center space-x-2 font-semibold text-lg md:text-xl"
           >
-            Resume
+            📄 Resume
           </a>
         </div>
 
@@ -55,6 +50,7 @@ const Navbar = () => {
           <button
             onClick={handleMenuToggle}
             className="text-green-400 text-2xl focus:outline-none"
+            aria-label="Toggle menu"
           >
             {menuOpen ? <FaTimes /> : <FaBars />}
           </button>
@@ -64,22 +60,18 @@ const Navbar = () => {
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
         <div className="md:hidden bg-black bg-opacity-95 absolute top-full left-0 w-full">
-          <NavLink href="#about" text="1. About" onClick={handleCloseMenu} />
-          <NavLink
-            href="#experience"
-            text="2. Experience"
-            onClick={handleCloseMenu}
-          />
-          <NavLink href="#work" text="3. Work" onClick={handleCloseMenu} />
-          <NavLink href="#contact" text="4. Contact" onClick={handleCloseMenu} />
+          <NavLink href="#about" text="🌟 About" onClick={handleCloseMenu} />
+          <NavLink href="#experience" text="👨‍💼 Experience" onClick={handleCloseMenu} />
+          <NavLink href="#work" text="💼 Work" onClick={handleCloseMenu} />
+          <NavLink href="#contact" text="✉️ Contact" onClick={handleCloseMenu} />
           <a
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="block px-3 py-2 text-green-400 hover:text-white border-t border-gray-700"
+            className="block px-3 py-2 text-green-400 hover:text-white flex items-center space-x-2 font-semibold text-lg"
             onClick={handleCloseMenu}
           >
-            Resume
+            📄 Resume
           </a>
         </div>
       )}

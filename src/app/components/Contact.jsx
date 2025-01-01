@@ -13,17 +13,17 @@ const Contact = () => {
       }}
     >
       <div className="max-w-4xl w-full text-center px-5">
-        <h2 className="text-xl md:text-4xl font-bold text-green-400 mb-6">04. Get In Touch</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-[#4EF17A] mb-6">04. Get In Touch</h2>
         <p className="text-lg md:text-xl text-white leading-relaxed mb-8">
-          Although I’m currently looking for new opportunities, my inbox is always open. <br />
-          Whether you have a question or just want to say hi, I’ll do my best to get back to you!
+        Ready to create impactful software solutions together? 
+        Let’s connect! Reach out via LinkedIn or email me at wasif.hossain@hotmail.com to start a conversation.
         </p>
 
         {/* Icons with labels */}
         <footer className="mt-8">
           <div className="flex flex-wrap justify-center space-x-6 md:space-x-8">
             <a
-              href="mailto:example@example.com"
+              href="mailto:wasif.hossain@hotmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-white hover:text-green-400"
@@ -32,7 +32,7 @@ const Contact = () => {
               <span className="hidden md:inline-block text-lg">Email</span>
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/wasifhossainn"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-white hover:text-green-400"
@@ -41,7 +41,7 @@ const Contact = () => {
               <span className="hidden md:inline-block text-lg">Github</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/yourusername"
+              href="https://au.linkedin.com/in/wasif-hossain-b4398115a"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-white hover:text-green-400"
@@ -50,7 +50,7 @@ const Contact = () => {
               <span className="hidden md:inline-block text-lg">Linkedin</span>
             </a>
             <a
-              href="https://www.yournewspaperarticle.com"
+              href="https://dev.to/wasifhossain"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-white hover:text-green-400"
@@ -60,10 +60,6 @@ const Contact = () => {
             </a>
           </div>
         </footer>
-
-        <button className="mt-8 bg-transparent border border-green-400 px-8 py-4 rounded-lg hover:bg-green-400 hover:text-black text-green-400 text-xl">
-          Say Hello
-        </button>
       </div>
     </section>
   );
