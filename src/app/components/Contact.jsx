@@ -7,7 +7,7 @@ const Contact = () => {
       className="bg-black min-h-screen flex items-center justify-center py-10"
       id="contact"
       style={{
-        backgroundImage: "url('./images/contact-background.svg')",
+        backgroundImage: "url('/images/contact-background.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

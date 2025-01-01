@@ -58,7 +58,7 @@ const Experience = () => {
       className="min-h-screen bg-black text-white py-12 md:py-24 px-5 flex flex-col items-center justify-center"
       id="experience"
       style={{
-        backgroundImage: "url('./images/experience-background.svg')",
+        backgroundImage: "url('/images/experience-background.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -111,7 +111,7 @@ const Experience = () => {
         {/* Image Section */}
         <div className="md:w-3/4 hidden md:flex justify-center">
           <Image
-            src="./images/city.svg"
+            src="/images/city.svg"
             alt="Work Experience Illustration"
             height={1200}
             width={1200}

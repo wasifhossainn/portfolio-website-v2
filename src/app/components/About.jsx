@@ -27,7 +27,7 @@ const About = () => {
       id="about"
       className="bg-black text-white p-10 md:p-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10 min-h-screen"
       style={{
-        backgroundImage: "url('./images/about-background.svg')",
+        backgroundImage: "url('/images/about-background.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -48,7 +48,7 @@ const About = () => {
           downtime and improve business efficiency. Previously, I contributed to work 
           at Spiral Blue, where I designed machine learning models for satellite 
           imagery processing, and at Buzzy Buzz, where I scaled a platform to support 
-          over 10,000 users with 98% error-free releases.
+          over 1,000 users with 98% error-free releases.
         </p>
 
         <p className="text-lg font-medium mb-4">Technologies I've been working with recently:</p>
@@ -95,7 +95,7 @@ const About = () => {
       {/* Right Content (Profile Image) */}
       <div className="flex justify-center">
         <Image
-          src="./images/aboutprofile.svg"
+          src="/images/aboutprofile.svg"
           alt="Profile Photo"
           height={400}
           width={400}

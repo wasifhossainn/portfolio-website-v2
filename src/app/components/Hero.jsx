@@ -15,7 +15,7 @@ const Hero = () => {
       id="hero"
       className="grid grid-cols-1 md:grid-cols-2 bg-black text-[#4EF17A] min-h-screen relative overflow-hidden"
       style={{
-        backgroundImage: "url('./images/background.svg')",
+        backgroundImage: "url('/images/background.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -48,7 +48,7 @@ const Hero = () => {
       {/* Right Content (Globe Image) */}
       <div className="hidden md:flex justify-center">
         <Image
-          src="./images/World.svg"
+          src="/images/World.svg"
           alt="Globe"
           height={800}
           width={800}
