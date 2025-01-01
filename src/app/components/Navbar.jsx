@@ -76,7 +76,7 @@ const Navbar = () => {
           <NavLink href="#work" text="💼 Work" onClick={handleCloseMenu} />
           <NavLink href="#contact" text="✉️ Contact" onClick={handleCloseMenu} />
           <a
-            href="/files/Wasif-Hossain-Resume.pdf"
+            href="./files/Wasif-Hossain-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="block px-3 py-2 text-green-400 hover:text-white flex items-center space-x-2 font-semibold text-lg"
