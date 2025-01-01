@@ -95,7 +95,7 @@ const About = () => {
       {/* Right Content (Profile Image) */}
       <div className="flex justify-center">
         <Image
-          src="/images/about-profile.svg"
+          src="./images/aboutprofile.svg"
           alt="Profile Photo"
           height={400}
           width={400}
