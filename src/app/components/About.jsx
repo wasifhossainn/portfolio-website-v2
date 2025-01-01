@@ -48,7 +48,7 @@ const About = () => {
           downtime and improve business efficiency. Previously, I contributed to work 
           at Spiral Blue, where I designed machine learning models for satellite 
           imagery processing, and at Buzzy Buzz, where I scaled a platform to support 
-          over 10,000 users with 98% error-free releases.
+          over 1,000 users with 98% error-free releases.
         </p>
 
         <p className="text-lg font-medium mb-4">Technologies I've been working with recently:</p>
