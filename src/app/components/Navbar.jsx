@@ -8,11 +8,22 @@ const NavLink = ({ href, text, onClick }) => (
   <a
     href={href}
     className="block px-3 py-2 text-lg md:text-xl text-green-400 hover:text-white flex items-center space-x-2 font-semibold"
-    onClick={onClick}
+    onClick={(e) => {
+      e.preventDefault();
+      scrollToSection(href.slice(1)); // Pass the id to the scrollToSection function
+      onClick && onClick(); // Call the onClick handler if provided
+    }}
   >
     {text}
   </a>
 );
+
+const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,7 +47,7 @@ const Navbar = () => {
           <NavLink href="#work" text="💼 Work" />
           <NavLink href="#contact" text="✉️ Contact" />
           <a
-            href="files/Wasif-Hossain-Resume.pdf"
+            href="./files/Wasif-Hossain-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="border text-green-400 border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:text-black flex items-center space-x-2 font-semibold text-lg md:text-xl"
