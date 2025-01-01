@@ -240,7 +240,7 @@ const Work = () => (
     }}
   >
     <div className="flex items-center justify-between">
-      <h2 className="text-xl text-green sm:text-5xl font-bold">03. Some Things I've Built</h2>
+      <h2 className="text-4xl md:text-5xl text-green font-bold">03. Some Things I've Built</h2>
     </div>
 
     {/* Main Projects Section */}
@@ -251,7 +251,7 @@ const Work = () => (
     </div>
 
     {/* Other Projects Section */}
-    <h3 className="mt-12 text-xl sm:text-3xl font-bold">Other Projects</h3>
+    <h3 className="mt-12 text-4xl md:text-5xl font-bold">Other Projects</h3>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
       {otherProjects.map((project, index) => (
         <SmallProjectCard key={index} project={project} />

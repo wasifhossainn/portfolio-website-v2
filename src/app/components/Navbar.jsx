@@ -36,7 +36,7 @@ const Navbar = () => {
           <NavLink href="#work" text="💼 Work" />
           <NavLink href="#contact" text="✉️ Contact" />
           <a
-            href="/resume.pdf"
+            href="./files/Wasif-Hossain-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="border text-green-400 border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:text-black flex items-center space-x-2 font-semibold text-lg md:text-xl"
@@ -65,7 +65,7 @@ const Navbar = () => {
           <NavLink href="#work" text="💼 Work" onClick={handleCloseMenu} />
           <NavLink href="#contact" text="✉️ Contact" onClick={handleCloseMenu} />
           <a
-            href="/resume.pdf"
+            href="./files/Wasif-Hossain-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="block px-3 py-2 text-green-400 hover:text-white flex items-center space-x-2 font-semibold text-lg"
